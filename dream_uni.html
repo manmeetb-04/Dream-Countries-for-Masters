@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream university</title>
+    <style>
+        body {
+            font-family: Georgia,serif;
+            background: url('video/map.png') no-repeat center center fixed ;
+            background-size: cover;
+            color: #2e2e2e;
+            margin: 0;
+            text-align: center;
+        }
+
+        h1{
+            background-color: #ffffff;
+            color: #b22222;
+            padding: 20px;
+            margin: 10;
+            font-size: 2.5rem;
+            display: inline-block;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.9);;
+        }
+        .countries{
+            position: relative;
+            
+        } 
+        .countries::after{
+            content: "📌";
+            rotate: 260deg;
+            font-size: 50px;
+            position: absolute;
+            top: 130px;
+            left: 500px;
+           
+        }
+        .countries::before{
+            content: "જ⁀➴";
+            rotate: 345deg;
+            font-size: 70px;
+            position: absolute;
+            top: 120px;
+            left: 550px;
+           
+        }
+        .germany{
+            
+            background-color: #fff5e1;
+            padding: 15px;
+            width: 420px;
+            height: 200px;
+            align-items: center;
+            box-shadow: 0 3px 10px rgba(92,64,51,0.3);
+            position: absolute;
+            top: 150px;
+            left: 750px;
+        }
+        .germany:hover{
+            
+            transform: scale(0.95);
+            box-shadow: 0 0 10px #b22222;
+            transition: 1s ease-in-out;
+        }
+        .glink{
+            
+            text-decoration: none;
+            color: #b22222;
+            font-family: Georgia, serif;
+            font-style: italic;
+
+        }
+        .glink:hover{
+            cursor: pointer;
+            text-decoration: underline;
+            color: #f4a460;
+            transition: color 0.3s ease;
+             
+            
+    }
+
+
+        .germany_video{
+            position: absolute;
+            top: 10px;
+            left: -28px;
+        }
+       
+        .about_germany{
+            position: absolute;
+            top: 50px;
+            left: 130px;
+            text-align: left;
+            padding: 5px;
+            text-transform: capitalize;
+            font-family: Arial, sans-serif;
+        }
+        
+        .austria{
+            background-color: #fff5e1;
+            padding: 15px;
+            width: 420px;
+            height: 200px;
+            box-shadow: 0 3px 10px rgba(92,64,51,0.3);
+            position: absolute;
+            top: 440px; 
+            left: 50px;
+            
+        }  
+        .austria_wrapper::after{
+            content: "📌";
+            rotate: 0;
+            font-size: 50px;
+            position: absolute;
+            top: 310px;
+            left: 630px;
+           
+        }
+        .austria_wrapper::before{
+            content: "જ⁀➴";
+            rotate: 130deg;
+            font-size: 70px;
+            position: absolute;
+            top: 380px;
+            left: 480px;
+        }
+        .austria:hover{
+            
+            transform: scale(1.10);
+            box-shadow: 0 0 10px #b22222;
+            transition: 01s ease-in-out;
+        }
+        
+        .austria
+        .alink{
+            text-decoration: none;
+            color: #b22222;
+            font-family: Georgia, serif;
+            font-style: italic;
+
+        }
+        .alink:hover{
+            cursor: pointer;
+            text-decoration: underline;
+            color: #f4a460;
+            transition: color 0.3s ease;
+        }
+        .austria_video{
+            position: absolute;
+            top: 10px;
+            left: -28px;
+        }
+        .about_austria{
+            position: absolute;
+            top: 50px;
+            left: 130px;
+            text-align: left;
+            padding: 5px;
+            text-transform: capitalize;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Manmeet Babbar</h1>
+    </header>
+        <div class="countries">
+            <div class="germany">
+                <h2><a href="https://www.daad.de/en/studying-in-germany/" class="glink" target="_blank">Germany 🇩🇪</a></h2>
+                <pre class="about_germany">Block acc 118600 inr
+expenditure : 700-900 EUR per month
+fees: 0 EUR per semester
+part-time job wage: 12.41 EUR per hour
+part-time job hours: 20 hours per week
+part-time job monthly income: 880 EUR 
+         or in indian rupees 88000 
+                </pre>
+                <video class="germany_video" width="200px" height="200px"control autoplay loop muted>
+                    <source src="./video/germany.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="austria_wrapper">
+            <div class="austria">
+                <h2><a href="https://studyinaustria.at/en" target="_blank" class="alink">Austria 🇦🇹</a></h2>
+                <pre class="about_austria">proff of fund :7560 euro  
+expenditure: 500-600  EUR per month
+fees: 726 EUR per semester
+part-time min wage: 900 and 1100
+part-time hours: 20 to 40 hours per week 
+part-time month: 800 to 1000 EUR    
+                </pre>
+                <video class="austria_video" height="200px" width="200px" control autoplay loop  muted>
+                    <source src="./video/austria.mp4">
+                </video>
+            </div>
+            </div>
+        </div>
+</body>
+</html>
